@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c1117;
+  color: #e6edf3;
+  margin: 0;
+  padding: 0;
+}
+.container { max-width: 1180px; margin: auto; padding: 0 20px; }
+header { background-color: rgba(12,17,23,0.9); padding: 14px 0; position: sticky; top: 0; }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a { color: #9fb0c3; text-decoration: none; }
+.nav a:hover { color: #fff; }
+.btn { background-color: #0a66ff; color: white; padding: 10px 14px; text-decoration: none; border-radius: 8px; }
+.hero { padding: 36px; background-color: #0f1623; border-radius: 12px; margin-top: 20px; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }
+.card { background-color: #0e1522; padding: 20px; border-radius: 8px; text-align: center; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 22px; margin-top: 24px; }
+.panel { background-color: #0d1421; padding: 18px; border-radius: 8px; }
+footer { text-align: center; padding: 20px; color: #9fb0c3; font-size: 14px; }
