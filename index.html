@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Início – N Soluções</title>
-
+  <!-- Ícones via código (Font Awesome) – sem integrity para evitar bloqueio no Pages -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
   <header>
@@ -24,49 +25,76 @@
     </div>
   </header>
 
-<main class="container">
+  <main class="container">
 
-<section class="hero">
-  <h1>Soluções Tecnológicas e Engenharia Sob Medida</h1>
-  <p>Automação, Engenharia Elétrica e Projetos Inteligentes para Empresas e Governos.</p>
-  <div class="actions">
-    <a class="btn" href="servicos.html">Conheça Nossos Serviços</a>
-    <a class="btn" href="contato.html">Fale Conosco</a>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Serviços</h2>
-  <div class="services-grid">
-    <a class="card" href="servicos.html#automacao">Automação Sob Demanda</a>
-    <a class="card" href="servicos.html#eletrica">Engenharia Elétrica</a>
-    <a class="card" href="servicos.html#civil">Engenharia Civil</a>
-    <a class="card" href="servicos.html#software">Desenvolvimento de Software</a>
-    <a class="card" href="servicos.html#manutencao">Manutenção Especializada</a>
-  </div>
-</section>
-
-<section class="grid">
-  <div class="panel">
-    <h3>Destaque de Projetos</h3>
-    <p>Veja como aplicamos tecnologia e engenharia para resolver problemas reais.</p>
-    <p><a class="btn" href="portfolio.html">Ver Portfólio</a></p>
-  </div>
-  <aside class="panel">
-    <h3>Marcelo Almeida</h3>
-    <p>Engenheiro Eletricista (CREA) — especialista em automação e projetos elétricos.</p>
-    <p><a class="btn" href="orcamento.html">Enviar Solicitação</a></p>
-  </aside>
-</section>
-
-</main>
-    <footer class="container footer">
-      <div class="foot">
-        <small>© <span id="year"></span> N Soluções Tecnológicas — Todos os direitos reservados.</small>
-        <small><a href="politicas.html">Políticas</a></small>
+    <section class="hero hero-bg">
+      <h1>Soluções Tecnológicas e Engenharia Sob Medida</h1>
+      <p>Automação, Engenharia Elétrica e Projetos Inteligentes para Empresas e Governos.</p>
+      <div class="actions">
+        <a class="btn" href="servicos.html">Conheça Nossos Serviços</a>
+        <a class="btn" href="contato.html">Fale Conosco</a>
       </div>
-    </footer>
+    </section>
 
-<script src="js/script.js"></script>
+
+    <!-- SERVIÇOS (com ícones e descrição curta) -->
+    <section class="section" aria-labelledby="tit-servicos">
+      <h2 id="tit-servicos">Serviços</h2>
+      <div class="services-grid">
+        <a class="card" href="servicos.html#automacao" aria-label="Automação Sob Demanda">
+          <div><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+          <div class="title">Automação Sob Demanda</div>
+          <small>Integrações sob medida para otimizar processos.</small>
+        </a>
+
+        <a class="card" href="servicos.html#eletrica" aria-label="Engenharia Elétrica">
+          <div><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+          <div class="title">Engenharia Elétrica</div>
+          <small>Projetos BT/MT, SPDA, luminotécnico e laudos.</small>
+        </a>
+
+        <a class="card" href="servicos.html#civil" aria-label="Engenharia Civil">
+          <div><i class="fa-solid fa-city" aria-hidden="true"></i></div>
+          <div class="title">Engenharia Civil</div>
+          <small>Arquitetura, estrutural, hidráulico e prevenção a incêndio.</small>
+        </a>
+
+        <a class="card" href="servicos.html#software" aria-label="Desenvolvimento de Software">
+          <div><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+          <div class="title">Desenvolvimento de Software</div>
+          <small>Aplicações personalizadas para gestão e negócios.</small>
+        </a>
+
+        <a class="card" href="servicos.html#manutencao" aria-label="Manutenção Especializada">
+          <div><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+          <div class="title">Manutenção Especializada</div>
+          <small>Preventiva e corretiva com SLA e suporte ágil.</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h3>Destaque de Projetos</h3>
+        <p>Veja como aplicamos tecnologia e engenharia para resolver problemas reais.</p>
+        <p><a class="btn" href="portfolio.html">Ver Portfólio</a></p>
+      </div>
+    <aside class="panel">
+  <h3>Halisson Araújo Garcia</h3>
+  <p>Engenheiro Eletricista (CREA-SP n° 5070444400) — Técnico em Mecatrônica, Mestre em Engenharia Elétrica, Engenheiro de Segurança do Trabalho e Doutorando em Engenharia Aeroespacial.</p>
+  <p><a class="btn" href="orcamento.html">Enviar Solicitação</a></p>
+</aside>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <div class="foot">
+      <small>© <span id="year"></span> N Soluções Tecnológicas — Todos os direitos reservados.</small>
+      <small><a href="politicas.html">Políticas</a></small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
