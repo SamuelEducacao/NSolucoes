@@ -114,6 +114,30 @@ h2{margin:.2rem 0 .8rem}h3{margin:.2rem 0 .6rem}
   color: var(--muted);
 }
 
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
 
 /* ===== Hero com imagem de fundo (chip) e overlay ===== */
 .hero.hero-bg{
@@ -122,7 +146,6 @@ h2{margin:.2rem 0 .8rem}h3{margin:.2rem 0 .6rem}
   padding: 48px 36px;
   min-height: 380px;
 }
-
 .hero.hero-bg::before{
   content:"";
   position:absolute;
@@ -131,13 +154,11 @@ h2{margin:.2rem 0 .8rem}h3{margin:.2rem 0 .6rem}
   background:
     radial-gradient(900px 480px at 100% 10%, rgba(0,209,255,.10), transparent 70%),
     linear-gradient(180deg, rgba(3,10,18,.35), rgba(3,10,18,.65)),
-    url("../img/chip.png") center/cover no-repeat;
+    url("../img/chip.png?v=2") center/cover no-repeat;
   filter:saturate(115%) contrast(105%);
   z-index:0;
 }
-
-.hero.hero-bg > *{ position:relative; z-index:1; }
-
+.hero.hero-bg>*{ position:relative; z-index:1; }
 .hero.hero-bg h1,
 .hero.hero-bg p{
   background:rgba(0,0,0,.38);
@@ -146,13 +167,12 @@ h2{margin:.2rem 0 .8rem}h3{margin:.2rem 0 .6rem}
   width:fit-content;
   max-width:86%;
 }
-
 @media (max-width:760px){
   .hero.hero-bg{ padding:28px 22px; min-height:320px; }
   .hero.hero-bg::before{
     background:
       radial-gradient(700px 360px at 90% 0%, rgba(0,209,255,.10), transparent 70%),
       linear-gradient(180deg, rgba(3,10,18,.45), rgba(3,10,18,.75)),
-      url("../img/chip.png") 60% center/cover no-repeat;
+      url("../img/chip.png?v=2") 60% center/cover no-repeat;
   }
 }
